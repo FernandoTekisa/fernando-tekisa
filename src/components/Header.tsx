@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { ModeToggle } from "./Mode-toggle";
 import { motion } from "framer-motion";
 
 export default function Header() {
@@ -31,7 +30,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between px-4 max-w-4xl mx-auto">
         <Link href="/" className="font-bold text-xl">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            Portfolio
+            Fernando Tekisa 
           </motion.div>
         </Link>
         <nav className="flex items-center gap-6">
@@ -59,7 +58,6 @@ export default function Header() {
               Contato
             </Link>
           </motion.div>
-          <ModeToggle />
         </nav>
       </div>
     </motion.header>

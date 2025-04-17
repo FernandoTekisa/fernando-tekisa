@@ -16,7 +16,7 @@ export default function Footer() {
         </p>
         <div className="flex items-center gap-4">
           <motion.a
-            href="https://github.com"
+            href="https://github.com/FernandoTekisa"
             target="_blank"
             rel="noreferrer"
             className="text-sm text-muted-foreground hover:text-foreground"
@@ -26,7 +26,7 @@ export default function Footer() {
             GitHub
           </motion.a>
           <motion.a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/fernando-tekisa-b896012bb/"
             target="_blank"
             rel="noreferrer"
             className="text-sm text-muted-foreground hover:text-foreground"
@@ -36,7 +36,7 @@ export default function Footer() {
             LinkedIn
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://x.com/Fernandotekisa7"
             target="_blank"
             rel="noreferrer"
             className="text-sm text-muted-foreground hover:text-foreground"

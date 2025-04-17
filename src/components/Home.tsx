@@ -1,9 +1,11 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Download } from "lucide-react"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import { HyperText } from "@/components/magicui/hyper-text";
+import { Button } from "@/components/ui/button";
+import fernando from "@/image/fernando.jpg";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,11 +17,18 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, duration: 0.5 }}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              Olá, sou o <span className="text-primary">Rafael</span>
+              Olá, sou o{" "}
+              <HyperText className="text-primary">Fernando Tekisa</HyperText>
             </h1>
-            <h2 className="text-2xl font-semibold mt-2">Desenvolvedor Front-end</h2>
+            <h2 className="text-2xl font-semibold mt-2">
+              Desenvolvedor Front-end
+            </h2>
           </motion.div>
 
           <motion.p
@@ -28,8 +37,9 @@ export default function Home() {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="text-muted-foreground"
           >
-            Especializado em criar interfaces modernas e responsivas com React, Next.js e TypeScript. Transformo designs
-            em código limpo e eficiente, focando na experiência do usuário.
+            Especializado em criar interfaces modernas e responsivas com React,
+            Next.js e TypeScript. Transformo designs em código limpo e
+            eficiente, focando na experiência do usuário.
           </motion.p>
 
           <motion.div
@@ -45,13 +55,6 @@ export default function Home() {
                 </a>
               </Button>
             </motion.div>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" asChild>
-                <a href="/cv.pdf" download>
-                  Download CV <Download className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
-            </motion.div>
           </motion.div>
         </motion.div>
 
@@ -63,7 +66,7 @@ export default function Home() {
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20">
             <Image
-              src="/placeholder.svg?height=320&width=320"
+              src={fernando}
               alt="Foto de perfil"
               fill
               className="object-cover"
@@ -73,5 +76,5 @@ export default function Home() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
